@@ -1,0 +1,142 @@
+html *
+{
+   font-size: 1em;
+   color: rgb(37, 37, 37);
+   font-family: 'SF Pro Display', sans-serif !important;
+}
+
+.container {
+    margin: 0px;
+}
+  
+.logo {
+    height: 60vmin;
+    min-height: 250px;
+    max-height: 400px;
+    pointer-events: none;
+    transform: scaleX(-1);
+}
+
+.ellipse {
+    position: absolute;
+    max-width: 650px;
+    padding-bottom: 250px;
+}
+  
+.header-section {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.header {
+    font-size: 2.5rem;
+    color: white !important;
+}
+  
+.header-text {
+    position: relative;
+    width:65vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.typing-demo .text {
+    position: relative;
+    color:rgb(59, 113, 222) !important;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+.text.typing-text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #282c34;
+    border-left: 2px solid rgb(59, 113, 222);
+    animation: animate 4s steps(12) infinite;
+  }
+  
+@keyframes animate {
+    40%,60% {
+      left: 100%;
+    }
+    100% {
+      left: 0%;
+    }
+}
+
+
+.small {
+    font-size: 0.75rem;
+}
+  
+.medium {
+    font-size: 1.25rem;
+}
+  
+p {
+    font-size: 14pt;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    background-color: #386574;
+}
+
+.about-box {
+    width: 80%;
+    max-width: 700px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color:blanchedalmond
+}
+
+.about-text {
+    width: 80%;
+    padding: 35px;
+}
+
+/* Social media buttons */
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    width: 60%;
+    max-width: 600px;
+    margin: 20px;
+    flex-wrap: wrap;
+    background-color: ;
+}
+
+.social-media-icon {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 6pt;
+    transition: 0.4s;
+}
+
+.social-media-icon:hover {
+    transform: scale(1.2);
+    transition: 0.4s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="container">
+    <div class="header-section">
+      <img
+        alt="A stylish background"
+        src="./content/ellipse.png"
+        class="ellipse"
+      />
+      <img
+        alt="Mona the octocat flying with a Jetpack"
+        src="./content/jetpacktocat.png"
+        class="logo"
+      />
+      <div class="header-text">
+        <p class="header">Hi, I'm Mona</p>
+
+        <div class="text typing-demo">
+          <span class="text typing-text"></span>
+        </div>
+
+        <script>
+          /* Javascript for animated typing text */
+          const textEl = document.querySelector(".typing-text");
+
+          const textLoad = () => {
+            setTimeout(() => {
+              textEl.textContent = "Developer";
+            }, 0);
+            setTimeout(() => {
+              textEl.textContent = "Designer";
+            }, 4000);
+            setTimeout(() => {
+              textEl.textContent = "Inventor";
+            }, 8000);
+          };
+
+          textLoad();
+          setInterval(textLoad, 12000);
+        </script>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <!--- Row of social media buttons for GitHub, Stackoverflow, LinkedIn and Twitter -->
+      <div class="social-media">
+        <a href="" class="social-media-link">
+          <img
+            src="./content/github.png"
+            class="social-media-icon"
+            alt="github"
+          />
+        </a>
+        <a href="" class="social-media-link">
+          <img
+            src="./content/stackoverflow.png"
+            class="social-media-icon"
+            alt="stackoverflow"
+          />
+        </a>
+        <a href="" class="social-media-link">
+          <img
+            src="./content/linkedin.png"
+            class="social-media-icon"
+            alt="linkedin"
+          />
+        </a>
+        <a href="" class="social-media-link">
+          <img
+            src="./content/twitter.png"
+            class="social-media-icon"
+            alt="twitter"
+          />
+        </a>
+      </div>
+
+      <div class="about-box">
+        <p class="about-text">
+          👋 Welcome to my portfolio. I'm a full-stack developer and designer
+          with a passion for building nifty gadgets. When I'm not coding, you
+          can find me surfing at Ocean Beach, playing a game of chess, or
+          camping out in a national park.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
